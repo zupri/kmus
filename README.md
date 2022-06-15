@@ -1,9 +1,9 @@
 ## Latar belakang
 Berawal dari mencari kamus untuk linux yang berbasis CLI, tanpa instalasi (portable), tanpa kompilasi, data mudah di edit dan ditambah tidak menemukan sesuai yang saya harapkan. Mulai berpikir untuk membuat aplikasi sendiri. Awalnya mau mengembangkan dengan python setelah beberapa pertimbangan lebih mudah untuk menggunakan file csv saja dan memanfaatkan command linux yang sudah ada seperti `grep` dan `more`.
 
-kmus-db adalah file data kamus dengan format csv bukan aplikasi kamus, cara menggunakannya sangat sederhana cukup ketik `grep -riw ^kata-yang-dicari`.
+kmus-db adalah file data kamus dengan format csv bukan aplikasi kamus. Extension .csv sengaja dihapus agar mudah dan singkat dalam pengetikan, cara menggunakannya sangat sederhana cukup ketik `grep -riw ^kata-yang-dicari` atau `grep -iw ^kata-yang-dicari kmus-db`
 
-Data kmus berisi kamus English, Indonesia, glossary dan istilah umum lainnya. Data kmus diambil dari gkamus, bank indonesia dll.
+Data kmus berisi kamus English, Indonesia, glossary dan istilah umum lainnya. Data kmus diambil dari gkamus dll.
 
 ## Contoh penggunaan
 ```bash
@@ -19,7 +19,7 @@ kmus-db:ant.,(Antara) Indonesian News Agency.
 ```
 -riw adalah optinal yang terdiri dari -r -i -w :
 
--r : recursive yang artinya pencarian tidak hanya pada data csv saja tapi file lain seperti readme juga akan dicari.
+-r : recursive yang artinya pencarian tidak hanya pada data `kmus-db` saja tapi file lain seperti readme juga akan dicari.
 
 -i : ignore-case mengabaikan huruf besar atau kecil.
 
@@ -59,7 +59,7 @@ atau kita edit di file lain misal `new-data.csv` dan dilakukan merge
 $ more new-data.csv >> kmus-db
 ```
 
-isi file dalam format csv lihat file `contoh.md`.
+isi file dalam format csv lihat file [`contoh.md`](https://github.com/zupri/kmus/blob/main/contoh.md).
 
 contoh
 ```
