@@ -27,6 +27,15 @@ kmus-db:ant.,(Antara) Indonesian News Agency.
 
 ^ : artinya pencarian dilakukan diawal baris.
 
+Kita bisa mempersingkat lagi pengetika dengan menggunakan `alias`.
+Contoh kita gunakan huruf `a` untuk mempersingkat 'more kmus-db | grep -i`.
+```bash
+$ alias a='more kmus-db | grep -i'
+```
+Sekarang eksekusinya menjadi
+```bash
+$ a ^kata-yang-dicari
+```
 
 contoh lain
 ```bash
