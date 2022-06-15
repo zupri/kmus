@@ -1,5 +1,5 @@
 ## Latar belakang
-Berawal dari mencari kamus untuk linux yang berbasis CLI, tanpa instalasi (portable), tanpa kompilasi, data mudah di edit dan ditambah tidak menemukan sesuai yang saya harapkan. Mulai berpikir untuk membuat aplikasi sendiri. Awalnya mau mengembangkan dengan python setelah beberapa pertimbangan lebih mudah untuk menggunakan file csv saja dan memanfaatkan command linux yang sudah ada seperti `grep` dan `more`.
+Berawal dari mencari kamus untuk linux yang berbasis CLI, offline, tanpa instalasi (portable), tanpa kompilasi, data mudah di edit dan ditambah tidak menemukan sesuai yang saya harapkan. Mulai berpikir untuk membuat aplikasi sendiri. Awalnya mau mengembangkan dengan python setelah beberapa pertimbangan lebih mudah untuk menggunakan file csv saja dan memanfaatkan command linux yang sudah ada seperti `grep` dan `more`.
 
 kmus-db adalah file data kamus dengan format csv bukan aplikasi kamus. Extension .csv sengaja dihapus agar mudah dan singkat dalam pengetikan, cara menggunakannya sangat sederhana cukup ketik `grep -riw ^kata-yang-dicari` atau `grep -iw ^kata-yang-dicari kmus-db`
 
